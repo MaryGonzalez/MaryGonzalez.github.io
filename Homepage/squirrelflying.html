@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Flying Squirrel pictures -->
+	<div class="headerAnimals">
+		<center><h1>Flying Squirrel</h1></center>
+		<br />
+		<center>
+			<img src="animals/squirrel_flying/flyingTrio.jpg" class="responsiveEdu" height="250" width="300"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/squirrel_flying/southern_flying_squirrel_track.gif" class="responsiveEdu" height="250" width="320">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/squirrel_flying/southern-flying-squirrel.jpg" class="responsiveEdu" height="250" width="200">-->
+		</center>
+		<br />
+	</div>
+
+
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide">INFORMATION</h2><br />
+
+			<p style="text-align:justify">
+				Compared to Gray and Fox Squirrels, Flying Squirrels are little guys sort of like chipmunks. Southern
+				flying squirrels are quite small. Adults usually are 9-10 inches long including the tail, and they weigh
+				between 2-4 ounces. Their coloring is grayish to brownish on the back, black around the flying membrane border,
+				and white on their belly. The flying membrane is a loose fold of skin that extends from the outside of the wrist
+				on the front leg, to the ankle on the back leg, on both sides (see bottom picture). They have large, black eyes,
+				a short nose, broad flat tail and prominent ears. Their lifespan is around 5 to 6 years in the wild.
+
+				<br /><br />
+
+				Flying Squirrels don't "fly" like birds, rather they "glide" through the air, usually from some high perch to
+				another tree or the ground. They can control their glide to maneuver around branches and other obstacles,
+				landing softly on their target.  They can glide as far as 250 feet.   They are clean and sociable animals
+				(except when Mom has a litter of babies to protect), and are active throughout the year, though they may stay
+				in their nests for a few days at a time during extreme cold. They are nocturnal and forage throughout the night.
+				We humans rarely see them, but on a quiet night in the woods, we may hear them chirping and gliding through the trees.
+
+				<br /><br />
+
+				Flying squirrels are valuable to nature. Feeding on tree buds may help stimulate tree growth. Flying Squirrels
+				eat wood-eating insects, and dropped nuts and seeds help regenerate the forests.
+
+				<br /><br />
+			</p>
+			<br />
+
+
+
+			<div class="w3-row-padding w3-padding-32" style="margin:0">
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Geographic Range:</b></p>
+						<br /><center><img src="animals/squirrel_flying/southern_flying_squirrel_range.jpg" height="175" width="200"></center><br />
+						<p style="text-align:justify">
+							South of Maine throughout the East and South - mostly east of the Great Plains states and also in
+							forested areas in throughout Mexico.
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Food Preferences:</b></p>
+						<br /><center><img src="animals/squirrel_flying/ed_flying_squirrel.jpg" height="180" width="230"></center><br />
+						<p style="text-align:justify">
+							Primarily vegans, they prefer hickory nuts and acorns, seeds, corn, fruits, berries, mushrooms,
+							maple tree blossoms and peanut butter. Moths, beetles and other insects and larvae are also consumed,
+							and if available, some meat from animal carcasses.
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Enemies:</b></p>
+						<br /><center><img src="animals/skunk/owl.jpeg" height="180" width="170"></center><br />
+						<p style="text-align:justify">
+							Pet cats, bobcats, raccoons, owls, hawks, some tree-climbing snakes, mites, fleas. They are fragile
+							and have been known to die of shock after capture.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

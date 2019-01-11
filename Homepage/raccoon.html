@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Raccoon pictures -->
+	<div class="headerAnimals">
+		<center><h1>Raccoon</h1></center>
+		<br />
+		<center>
+			<img src="animals/raccoon/raccoonTrio.jpg" class="responsiveEdu" height="250" width="300"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/raccoon/raccoon_track.jpg" class="responsiveEdu" height="250" width="280">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/raccoon/adult.jpeg" class="responsiveEdu" height="250" width="310">-->
+		</center>
+		<br />
+	</div>
+
+
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide">INFORMATION</h2><br />
+
+			<p style="text-align:justify">
+				The raccoon is a medium-sized, stocky animal with a prominent black "mask" across the eyes,
+				a long bushy tail with black rings, broad head, pointed muzzle and short pointed ears.
+				Their color ranges from gray to reddish brown to buff, to almost black.  Both front and back
+				paws have 5 toes.  Front paws resemble human hands and are very dexterous, enabling the raccoon
+				to grasp tightly and open mussels or other interesting items (like garbage cans).  Adults weight
+				ranges from 6 to 25 pounds.  Their lifespan is around 5 years in the wild.
+
+				<br /><br />
+
+				Raccoons are primarily nocturnal.  They prefer to live in tree hollows, abandoned buildings,
+				barns, abandoned woodchuck burrows, haystacks and your attic.  Raccoons do not hibernate
+				but may "hole up" for a few days during inclement winter weather.  They put on a tremendous
+				amount of weight prior to winter.  In the wild, they may lose up to 50% of their weight during
+				the winter months, when food is scarce.
+
+				<br /><br />
+
+				Raccoons are agile climbers and good swimmers and are capable of drowning predators and prey.
+				They prefer to run or hide when confronted but will fight viscously when cornered.
+				Adults appear to live solitary lives, but large groups of raccoons have been observed in the same
+				area where there is abundant food.  They also have a complex range of vocalizations and body language
+				that serves as communication among the species.  Some raccoons may be seen dipping their food in water
+				before eating.  It is speculated that by wetting their feet, there is an increase in tactile sensitivity.
+				Raccoons may rely more on touch than on sight with regards to food.  Their sense of smell is extremely acute.
+
+				<br /><br />
+			</p>
+			<br />
+
+
+
+			<div id="animalInfo">
+				<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+					<div class="flex-containerEdu2">
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Geographic Range:</b></p></center>
+									<br /><center><img src="animals/raccoon/raccoon_range.jpg" height="175" width="200"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												Raccoons may be found in the Southern half of Canada throughout the U.S., Mexico and Central America.
+												In Missouri, the raccoon is found in urban, suburban and wooded area, attesting to its ability to adapt
+												to having humans in its backyard.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+						<!----->
+
+
+
+
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Food Preferences:</b></p></center>
+									<br /><center><img src="animals/bobcat/mouse.jpeg" height="180" width="230"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												Raccoons are omnivorous and opportunistic.  In most habitats, plants provide the bulk of the diet,
+												such as wild grapes, persimmons, cherries, plums, apples, acorns and other nuts.  Corn is taken from fields.
+												Other entrees include crayfish, fish, rodents, frogs, bird eggs, snakes, birds, small rabbits, various insects
+												and worms.  Bird feeders provide some sustenance.  Scavenging through garbage cans and dumpsters seems a
+												favorite for the more urbanized raccoons.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!----->
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Enemies:</b></p></center>
+									<br /><center><img src="animals/bobcat/dog.jpeg" height="175" width="220"></center><br />
+
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												Humans, automobiles, dogs, ticks, fleas, parasitic worms, distemper, tuberculosis, rabies and Parvo-Virus.
+												Owls and coyotes will go after the young.
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

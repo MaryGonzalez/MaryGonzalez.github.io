@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Grey Squirrel pictures -->
+	<div class="headerAnimals">
+		<center><h1>Grey Squirrel</h1></center>
+		<br />
+		<center>
+			<img src="animals/squirrel_gray/greyTrio.jpg" class="responsiveEdu" height="250" width="300"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/squirrel_gray/gray_squirrel_track.jpg" class="responsiveEdu" height="250" width="320">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/squirrel_gray/georgia2.jpg" class="responsiveEdu" height="250" width="200">-->
+		</center>
+		<br />
+	</div>
+
+
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide w3-center">INFORMATION</h2><br />
+
+			<p style="text-align:justify">
+				The gray squirrel is a medium sized, slender tree squirrel, distinguished from the fox squirrel
+				by its grayer back, white under parts, silver edging of the tail, smaller size and more slender
+				facial profile.  The eyes are so located on the head that the squirrel has a 40 degree binocular
+				vision and good lateral sight.  This helps the squirrel judge distance and depth while jumping and
+				traveling through the trees at high speed. Lifespan in the wild averages 6 years.
+
+				<br /><br />
+
+				Gray squirrels usually live most of their lives in and around one nest tree, having a small home
+				range, but may have several auxiliary nests in an area to move to as flea infestations become intolerable.
+				They may also get into attics of homes, causing mild dismay to the other inhabitants. Gray squirrels are <b>diurnal</b>,
+				rising at first light, foraging and feeding for a while and napping through the heat  of the afternoon, then
+				foraging again in the late afternoon.  They spend a lot of time on the ground, foraging and storing their loot.
+				The big bushy tail serves as a balance in jumping, climbing and running among the tree branches, as well as
+				signaling agitation and aggression.  It is also an umbrella for shade in the sunlight and provides warmth in the winter.
+				Gray squirrels are fairly social and live in loose colonies, recognize who “belongs”, and may den up together for warmth
+				during cold weather.  They do not hibernate during the winter, although they will become less active during inclement weather.
+				Gray squirrels have many vocalizations and distinct body language to indicate such things as fear, stress, contentment,
+				agitation and aggression.
+
+				<br /><br />
+
+				Gray squirrels may have two litters a year.  The first is born between February and April, the second between August and September.
+
+				<br /><br /><br />
+
+				<i><b>What to do if you find a baby squirrel</b></i>:<br /><br />
+
+				<div class="flex-containerEduImg">
+					<div><img src="pictures/infant-squirrel-pinky.jpg" height="200" width="270"></div>
+					<div><img src="pictures/squirrel-nesting.jpg" height="200" width="250"></div>
+				</div>
+
+				<br /><br />
+				A surprisingly high number of baby squirrel problems can be successfully
+				resolved by reuniting to the baby with the mother squirrel.  If you have found a baby squirrel in the past few hours and the animal
+				is <b>not</b> injured and shows no evidence of fly egg packets or maggots, the mother squirrel should be given the chance to retrieve the baby.
+				This can be accomplished by:
+
+				<ol style="padding-left:80px">
+
+					<li>Placing the baby in a small plastic container with holes punched in the bottom for drainage.</li>
+					<li>
+						Line the container with a small washcloth or paper towel and nail it to the tree under which the squirrel was found, 5 or 6 feet off the
+						ground.
+					</li>
+					<li>The squirrel should be left in the container for 2 hours to allow the mother ample time to locate her missing young.</li>
+					<li>
+						The mother is not apt to return if people dogs or cats are nearby.  <b> No attempt should be made to feed the baby.</b>  A hungry baby will cry
+						for its mother and its crying will help the mother locate her young.
+					</li>
+					<li>
+						If the mother has not returned in a few hours, or if it is very cold bring the baby indoors and keep it warm (place container on a heating pad set to low).  <b>Do not</b> leave the baby out after dusk,
+						for any reason.
+					</li>
+				</ol>
+				<br /> Please call our clinic with any questions or if the mother does not return: 636-677-3670
+
+				<br /><br />
+
+				<i><b>The nest tree has been cut down or fallen</b></i>: <br /><br />
+
+				<div class="flex-containerEduImg">
+					<div><img src="pictures/squirrel_moving_kitten.jpg" height="200" width="270"></div>
+					<div><img src="pictures/blog_renest_mar.jpg" height="200" width="270"></div>
+
+				</div>
+
+				<br /><br />
+				Leave a section of the tree containing leaf or cavity nest in the yard as near as
+				possible to the original tree location and clear the area of any activity, allowing the mother sufficient time to retrieve her young.
+				Squirrels usually have alternate nests. Observe from indoors. Watching this retrieval process will melt the hardest hearts. Squirrel mothers
+				are about the most diligent and solicitous in the wildlife kingdom. Incredible acts of bravado have often been reported to us. One mother
+				squirrel upon finding her nest tree downed by a tree service, approached within 10 feet of an operating chain saw to retrieve her young.
+				Because of the interdependence of squirrels within a particular community, i.e., denning up in groups to keep from freezing to death in bitterly
+				cold weather, every effort should be made to reunite the mother with her young.
+
+				<br /><br />
+
+				<i><b>The baby cannot be reunited with its mother</b></i>: If the mother is known to be dead or the baby squirrel is injured or the baby
+				shows evidence of fly egg packets or maggots, please call the clinic to make arrangements to bring the baby in to the clinic
+				where it can know the company of other squirrels, and it's diet can be carefully monitored and medical attention will be immediately available
+				if problems should arise.
+
+				<br /><br />
+
+				<i><b>What not to do</b></i>:
+				<ul>
+					<li>
+						Trapping & removing squirrels is not always the solution to the problem.
+						<ul>
+							<li>Removing the animal is illegal without the proper permits and only creates an open space for another animal.</li>
+							<li>A trapped adult may also leave young behind to die of starvation in an inaccessible area. </li>
+						</ul>
+					<li>Focus on removing the attraction, not the animal. </li>
+					<li>Never move young from the den.</li>
+					<li>
+						Do not use poisons. They are inhumane and may be illegal.  They can result in secondary poisoning to raptors,
+						wild scavengers and neighborhood pets.
+					</li>
+					<li>
+						It is illegal to keep wild animals, even or a short time. They have specialized nutritional, housing
+						and handling needs that you are unlikely to be able to provide.  Inexperienced individuals who attempt to raise or treat them inevitably produce
+						unhealthy, tame animals that cannot survive in their natural habitat.
+					</li>
+				</ul>
+
+				<br /><br />
+
+				<i><b>Preventing Problems</b></i>:
+				<ul>
+					<li>Do not encourage squirrels by feeding them close to your house. </li>
+					<li>Keep pet food and water dishes inside. </li>
+					<li>Do not allow spillage to accumulate outside birdfeeders.</li>
+					<li>Keep grills and barbeque pits clean.  Even a small amount of food scraps may attract squirrels and other wild animals. </li>
+					<li>Trim tree limbs that allow access to your roof.</li>
+					<li>Repair broken, weak or rotted areas on your roof, soffit and fascia.</li>
+					<li>Install and maintain chimney caps before animals move into your chimney. </li>
+					<li>Use welded wire on the inside of attic vents to prevent access to the attic if the covers are removed.</li>
+
+				</ul>
+
+				<br /><br />
+
+			</p>
+			<br />
+
+
+
+			<div class="w3-row-padding w3-padding-32" style="margin:0">
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Geographic Range:</b></p>
+						<br /><center><img src="animals/squirrel_gray/gray_squirrel_range.jpg" height="175" width="200"></center><br />
+						<p style="text-align:justify">
+							Southern Canada south to Florida; generally east of the Great Plains.
+						</p>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

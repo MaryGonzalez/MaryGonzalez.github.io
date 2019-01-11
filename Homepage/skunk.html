@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Skunk pictures -->
+	<div class="headerAnimals">
+		<center><h1>Skunk</h1></center>
+		<br />
+		<center>
+			<img src="animals/skunk/skunkTrio.jpg" class="responsiveEdu" height="250" width="280"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/skunk/skunk_track.jpg" class="responsiveEdu" height="250" width="240">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/skunk/adult.jpg" class="responsiveEdu" height="250" width="300">-->
+		</center>
+		<br />
+	</div>
+
+
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide">INFORMATION</h2><br />
+
+			<p style="text-align:justify">
+				The skunk is a small-sized, stocky mammal with a small head, short ears, short legs and a prominent long-haired tail.
+				There are 5 clawed toes on each foot, front longer than back. Typically, the body is mostly black with a thin white stripe
+				down the center of the face, a broader stripe from the back of the neck, forking down the back. Average weight is 3 1/2 to 10 pounds.
+				Their lifespan in the wild is estimated average of 2 years.
+
+				<br /><br />
+
+				Striped skunks usually have a below ground den to call home. Sometimes they dig their own, but prefer an abandoned den
+				of a groundhog, fox or other mammal. Some dens are in fallen tree stumps, brush piles, or under a building such as your porch.
+				Skunks are primarily nocturnal beginning in late afternoon/early evening and foraging most of the night.
+
+				<br /><br />
+
+				They do not hibernate but do become dormant (sleepy) during cold weather sometimes for a month or more. So, they have to
+				store up fat during the fall to survive harsh winters. Skunks do not smell bad themselves, but when provoked (self-defense),
+				two glands located at the base of the tail can squirt the skunk stink fluid on a target at 5-10 feet, and spray
+				less accurately for up to 20 feet. The smell can carry for over a mile. They usually warn before spraying by stomping their
+				front feet, and by raising and fluffing out their tail. Beware if the skunk is facing you and arches its body into a "U" shape,
+				with its tail pointing at you as well. It's time to quickly back away!
+
+				<br /><br />
+			</p>
+			<br />
+
+
+
+			<div class="w3-row-padding w3-padding-32" style="margin:0">
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Geographic Range:</b></p>
+						<br /><center><img src="animals/skunk/skunk_range.gif" height="175" width="200"></center><br />
+						<p style="text-align:justify">
+							From Northern Canada throughout the United Sates and into Northern Mexico
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Food Preferences:</b></p>
+						<br /><center><img src="animals/skunk/eating.jpg" height="180" width="230"></center><br />
+						<p style="text-align:justify">
+							Insects are the food of choice during spring and summer - grasshoppers, beetles, grub worms and larvae are some delicacies.
+							During the fall and winter, they eat plant and animal foods in about equal amounts, depending on what is available -
+							mice, rats, moles, frogs, crayfish, minnows, nuts, grains, some grasses, buds and roots are included in their diets.
+							Occasionally they eat bird eggs.
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Enemies:</b></p>
+						<br /><center><img src="animals/skunk/owl.jpeg" height="180" width="160"></center><br />
+						<p style="text-align:justify">
+							Most other animals do not include skunks as their favored prey, maybe because they respect or fear the smelly consequences.
+							But if starving, great horned owls, coyotes, foxes and bobcats may prey on the young skunks. Other enemies include fleas,
+							lice, ticks, roundworms, tapeworms and rabies as well as cars. Skunks don't move too quickly and don't like to back down.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

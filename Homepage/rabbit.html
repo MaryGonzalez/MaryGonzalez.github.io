@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Rabbit pictures -->
+	<div class="headerAnimals">
+		<center><h1>Eastern Cottontail Rabbit</h1></center>
+		<br />
+		<center>
+			<img src="animals/rabbits/rabbitTrio.jpg" class="responsiveEdu" height="250" width="300"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/rabbits/rabbit_track.jpg" class="responsiveEdu" height="250" width="250">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/rabbits/adult_cottontail.jpg" class="responsiveEdu" height="250" width="270">-->
+		</center>
+		<br />
+	</div>
+
+
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content  w3-padding-64" style="max-width:800px" id="band">
+			<center><h2 class="w3-wide">INFORMATION</h2><br /></center>
+
+			<p style="text-align:justify">
+				The cottontail is a medium-sized mammal with long ears, large hind feet, smaller front
+				legs, a short fluffy tail, and soft fur. The ears and hind legs are proportionally smaller
+				than those of a jackrabbit. The color varies from reddish to grayish brown, peppered with
+				black on the upper body; the tail shows a fluff of white. Females tend to weigh more than
+				males, with an average adult weight of 2-3 pounds. Their lifespan in the wild can reach
+				around 5 years. However, cottontails are a favorite food staple of carnivores and omnivores,
+				thus, they have many predators. If an area has had a very mild winter an adult female can
+				have up to 8 litters in one year. Litters contain 2-6 babies.
+
+				<br /><br />
+
+			<b>Determining the age of the rabbit</b>: <br />
+			<ul style="padding-left:60px">
+	
+				<li>Newborns:   Pink bellies, sleek dark fur (like seals)</li>
+				<li>5-6 Days:   Fully furred</li>
+				<li>7-8 Days:  Ears stand up</li>
+				<li>12-14 Days:  Able to hop, nibbling solid food</li>
+				<li>21-28 Days:  Ears 1" long - 2 finger width, body fist-sized and covers <br />most of an open hand and able to live independently</li>
+			</ul>
+
+		
+				<br />
+			</p>
+
+			<div class="flex-containerRabbit">
+
+				<div><img src="pictures/babyCotton.jpg" height="170" width="240"></div>
+				<div><img src="pictures/baby_bunny.jpg" height="170" width="240"></div>
+				<div><img src="pictures/rabbit.jpg" height="170" width="240"></div>
+
+			</div>
+
+			<p style="text-align:justify">
+				<br /><br />
+				Cottontails are mostly silent animals, but may give a shrill, high-pitched cry when scared, caught or fighting.
+				Females have calls for their young; hind feet may be thumped as a signal. Cottontails are adaptable animals
+				and may be found almost anywhere there is some cover. They seem to prefer an open brushy or forested habitat that
+				provides dense cover. They do not dig burrows, but do tend to live in a "form" which is a depression worn or
+				scratched out of the earth, in a brushy pile or thicket of grass
+			</p>
+
+
+			<br />
+			<p style="text-align:justify">
+				<b>Discovery of a nest in the yard</b>: The nest is usually a shallow depression in the yard,
+				lined with the mother's fur and covered with grass. It may be inappropriately placed (even in
+				a dog pen or under an outside faucet) or maybe inconveniently placed. It is not easy to
+				relocate the entire nest successfully so please, mow around the nest for a few weeks....
+				baby rabbits are in the nest such a short time. <br /><br />
+
+					<div class="flex-containerEduImg">
+			
+					 <div><img src="pictures/imag0102.jpg" height="200" width="300"></div>
+					 <div><img src="pictures/easterncottontail-nestfullofbabies-002.jpg" height="200" width="270"></div>
+  
+					</div>
+			</p>
+
+			<br />
+			<p style="text-align:justify">
+				<i><b>The nest has been abandoned -- No sign of the mother</b></i>: Mother rabbit is probably
+				close by, but she visits the nest only at night and early morning. To nurse her young,
+				it is necessary for her to straddle the nest. Because she cannot hide herself in so
+				shallow a nest, she exposes herself and the young to predation and therefore feeds her
+				babies only under cover of darkness. Because her milk is so rich and fatty, her young
+				are nursed once or twice each night.
+			</p>
+			<br />
+			<p style="text-align:justify">
+				<i><b>To determine whether or not the mother is returning to the nest</b></i>: If the eyes are
+				still closed, place two pieces of string in an "X" on top of the nest. Check the position
+				of the string the following morning. If the string has been disturbed, it can be assumed
+				that the mother rabbit has visited during the night. If not, please let us know. If the
+				eyes of the young are open, the placement of string on top of the nest is not effective
+				because, after the animals are ten days old, they may slip out of the nest at its edge
+				(never disturbing the string) and travel to mother's nearby location to nurse. If you
+				really believe that the mother is no longer around (i.e. dead young are found in the nest),
+				please call the wildlife rehab clinic. 636-677-3670
+				<br />
+				<div class="flex-containerEduImg">
+					<div><img src="pictures/rabbitneststicks4.jpg" height="200" width="300"></div> 
+					<div><img src="pictures/foundrabbit.png" height="200" width="270"></div> 
+				</div>
+
+
+			</p>
+			<br />
+			<p style="text-align:justify">
+				<i><b>The nest has been disturbed by children, dogs, cats, or crows</b></i>: If children have
+				discovered the nest and have handled the young, rub vanilla extract on your hands, and place
+				a drop of vanilla on each rabbit head and tail. Return the young to the nest, reassemble
+				nesting material, and sprinkle a few drops on the top of the nest. This will confuse the
+				mother's scent. If the nest is being disturbed by a dog, cat or crow, and the young have not
+				been injured, cover the nest with a wheelbarrow or lawnmower during the day and uncover it
+				at dusk to keep the predators away from the nest and allow the mother to feed during the night.
+				If the rabbits have been injured, please call the wildlife rehab clinic. 636-677-3670
+			</p>
+			<br />
+			<p style="text-align:justify">
+				<i><b>The nest has flooded and live young are found nearby</b></i>: Dry them off carefully and contain
+				them in a box with soft cloths to nestle in. Keep them warm with a heating pad on the lowest
+				setting placed under a portion of the box. Tiny rabbit young are unable to control their body
+				temperature and if they are cold to the touch, some source of warmth must be provided. Replace
+				them in the nest at dusk if the nest has drained sufficiently so that the mother rabbit can resume
+				her care. Use the vanilla treatment before replacing the young. Mother rabbit is far better able to
+				care for her young than a well-meaning rescuer.
+			</p>
+			<br /><br />
+
+			<br />
+
+
+
+			<div id="animalInfo">
+				<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+					<div class="flex-containerEdu2">
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Geographic Range:</b></p></center>
+									<br /><center><img src="animals/rabbits/eastern_cottontail_rabbit_range.jpg" height="175" width="200"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="word-spacing:7px;">
+												The Eastern Cottontail is primarily found east of the Rocky Mountain Range, north from Southern
+												Canada and south through Central America.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+						<!----->
+
+
+
+
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Food Preferences:</b></p></center>
+									<br /><center><img src="animals/rabbits/eating.jpeg" height="180" width="230"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="word-spacing:7px;">
+												Vegetarians - Bluegrass, wheat and white clover are favorites. Other choices include red clover,
+												timothy, crabgrass, alfalfa, soybeans, rye, and whatever greens you plant in your garden.
+												In winter, waste corn, winter wheat, bud sprouts, bark and twigs are eaten.
+												<br /><br /> Cottontails are active mostly at night and early in the morning; their prime feeding
+												periods are following sunrise and late afternoon/early evening. They are fastidious groomers.
+												Cottontails are also very high-strung; if held in captivity, they often die of cage shock.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!----->
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Enemies:</b></p></center>
+									<br /><center><img src="animals/bobcat/dog.jpeg" height="175" width="220"></center><br />
+
+									<center>
+										<div class="scrollBox">
+											<p style="word-spacing:6px;">
+												Humans, cars, lawnmowers, drought, loss of green lands due to development or changes in
+												agricultural methods, dogs, cats, snakes, coyotes, hawks, owls, crows, minks, foxes, mites,
+												ticks, fleas, parasitic worms, viruses.
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>
