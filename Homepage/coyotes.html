@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+	<br />
+
+
+	<!-- Header -->
+	<div class="headerAnimals">
+		<center><h1>Coyotes</h1></center>
+		<br />
+		<center>
+			<img src="animals/coyotes/coyoteTrio.jpg" class="responsiveEdu"> 
+			<!--<img src="animals/coyotes/coyote_track.gif" class="responsiveEdu">
+			<img src="animals/coyotes/coyote_sally.jpg" class="responsiveEdu">-->
+		</center>
+		<br />
+	</div>
+
+
+	<!-- information -->
+	<div id="animalBody">
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide">INFORMATION</h2><br />
+
+			<p style="text-align:justify">
+				Coyotes are mostly nocturnal mammals but occasionally are out in the daytime.
+				They can run as fast as 45 MPH for short distances, and they seem to enjoy outwitting
+				other animals and are even playful on occasion. Coyotes also have a rich vocabulary,
+				made up of various short sounds, barks, yips, growls, whimpers  and howls. In addition
+				to sound they communicate with other coyotes through variations of stance, ear position,
+				tail position, gaze, and teeth exposure.
+				<br /><br />
+
+				Social organization in coyotes varies from those living singly, in pairs of male and female
+				or in a family. They exhibit complex facial expressions and body postures to define their social role.
+
+				<br /><br />
+
+
+			</p>
+			<br />
+
+
+
+			<div id="animalInfo">
+				<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+					<div class="flex-containerEdu2">
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Geographic Range:</b></p></center>
+									<br /><center><img src="animals/coyotes/coyote_range.jpg" height="175" width="180"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												Coyotes prefer to live in brushy country along the edge of timber or in open farmlands.
+												They occur throughout North America, stretching from Mexico to Alaska. In Missouri
+												they can be found in the abundant prairie region of Northern and Western Missouri.
+												The home range of a coyote can be fairly small, 3 to 4 mile diameter when the young are
+												being fed and as great as 9 to 27 square miles during the rest of the year. Coyote dens
+												are usually located in unused fields, in a bank under a hollowed log, in a rock cavity or
+												even under a deserted building.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+
+
+						<!----->
+
+
+
+
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Food Preferences:</b></p></center>
+									<br /><center><img src="animals/bobcat/mouse.jpeg" height="180" width="210"></center><br />
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												Coyotes primarily relying upon rabbits, mice and other rodents; this makes up two-thirds
+												of their diet. They will also dine on livestock, poultry, insects and plants. Vegetation is very
+												important seasonally as well as some fruits and seeds.
+
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!----->
+
+						<div>
+
+							<div class="w3-third w3-margin-bottom">
+								<div class="w3-container w3-white">
+									<center><p><b>Reproduction:</b></p></center>
+									<br /><center><img src="animals/coyotes/love.jpg" height="175" width="180"></center><br />
+
+									<center>
+										<div class="scrollBox">
+											<p style="text-align:justify">
+												The height of mating season is late February, individual females can only breed on average of 2
+												to 5 days per year. Courtship between males and females can begin several months before mating season.
+												Gestation period is roughly 58 to 63 days and litters usually are comprised of 5 to 7 babies but can
+												range from 2 to 19 babies, born in late April. Some males and females will stay mated for a year and
+												others remain mated for life. The young are blind and helpless at birth and are covered with a brownish
+												grey fur. Their eyes open within 8 and 14 days of age and head outside of their den for their first peek
+												at the world at 3 weeks. Both parents care for the young. When they are very tiny the father will bring
+												the mother food, and when the babies are a little older the father will still hunt and bring back food
+												for them as well. The babies are taught to hunt for themselves at 8 to 12 weeks old and will leave the den
+												and venture out on their own in late summer, early fall. The babies usually do not start breeding, themselves,
+												until the second year of life.
+											</p>
+										</div>
+									</center>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>

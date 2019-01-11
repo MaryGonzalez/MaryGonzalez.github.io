@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WRC Education</title>
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">ANIMALS <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="badger.html" class="w3-bar-item w3-button">BADGER</a>
+					<a href="beaver.html" class="w3-bar-item w3-button">BEAVER</a>
+					<a href="bobcat.html" class="w3-bar-item w3-button">BOBCAT</a>
+					<a href="coyotes.html" class="w3-bar-item w3-button">COYOTES</a>
+					<a href="fox.html" class="w3-bar-item w3-button">FOX, RED</a>
+					<a href="Groundhog.html" class="w3-bar-item w3-button">GROUNDHOG/WOODCHUCK</a>
+					<a href="Mink.html" class="w3-bar-item w3-button">MINK</a>
+					<a href="opossum.html" class="w3-bar-item w3-button">OPOSSUM</a>
+					<a href="rabbit.html" class="w3-bar-item w3-button">RABBITS</a>
+					<a href="raccoon.html" class="w3-bar-item w3-button">RACCOON</a>
+					<a href="skunk.html" class="w3-bar-item w3-button">SKUNK</a>
+					<a href="squirrelfox.html" class="w3-bar-item w3-button">SQUIRREL, FOX</a>
+					<a href="squirrelflying.html" class="w3-bar-item w3-button">SQUIRREL, FLYING</a>
+					<a href="squirrelgrey.html" class="w3-bar-item w3-button">SQUIRREL, GREY</a>
+				</div>
+			</div>
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="badger.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BADGER</a>
+		<a href="beaver.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BEAVER</a>
+		<a href="bobcat.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BOBCAT</a>
+		<a href="coyotes.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COYOTES</a>
+		<a href="fox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FOX, RED</a>
+		<a href="Groundhog.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GROUNDHOG/WOODCHUCK</a>
+		<a href="Mink.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MINK</a>
+		<a href="opossum.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OPOSSUM</a>
+		<a href="rabbit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RABBIT</a>
+		<a href="raccoon.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RACCOON</a>
+		<a href="skunk.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SKUNK</a>
+		<a href="squirrelfox.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FOX</a>
+		<a href="squirrelflying.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, FLYING</a>
+		<a href="squirrelgrey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SQUIRREL, GREY</a>
+	</div>
+
+
+	<!-- Header -->
+	<div class="headerAnimals">
+		<center><h1>Red Fox</h1></center>
+		<br />
+		<center>
+			<img src="animals/fox_red/foxTrio.jpg" class="responsiveEdu" height="250" width="370"> <!--&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/fox_red/red_fox_track.gif" class="responsiveEdu" height="250" width="370">&nbsp; &nbsp; &nbsp;&nbsp;
+			<img src="animals/fox_red/red_fox_adult.jpg" class="responsiveEdu" height="250" width="350">-->
+		</center>
+		<br />
+	</div>
+
+
+
+	<!-- information -->
+	<div id="animaBody">
+		<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+			<h2 class="w3-wide">INFORMATION</h2><br />
+			<p style="text-align:justify">
+				The Red Fox is doglike in appearance, with an elongated pointed muzzle, long pointed ears,
+				long legs, long fur and a long bushy tail.  Their color ranges from a yellowish-red to dark red on the back.
+				The tail is yellowish-red with black and tipped in white.  While running the fox uses its tail for balance
+				and in sleep the tail covers and warms his feet and nose.  Cheeks, neck and belly are whitish and the legs
+				have black stockings.  Eye pupils are vertically elliptical.  The average adult weight is 8 to 15 pounds.
+				Their lifespan is 6 to 10 years in the wild.
+				<br /><br />
+
+				Red Foxes are both nocturnal and crepuscular (active early morning and early evening).
+				You might see one sunning on the lawn.  They do not form packs, but they do have family units when young are involved.
+				Otherwise, adults are primarily solitary.  Dens are used for birthing and raising young and in the winter.
+				Otherwise the fox sleeps on the ground with no special home.  Red Fox are good swimmers and prefer to run rather than fight
+				and are considered adept at outwitting their pursuers.
+
+				<br /><br />
+
+
+			</p>
+			<br />
+
+
+
+			<div class="w3-row-padding w3-padding-32" style="margin:0">
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Geographic Range:</b></p>
+						<br /><center><img src="animals/fox_red/red_fox_range.jpg" height="175" width="200"></center><br />
+						<p style="text-align:justify">
+							The Red Fox has the widest geographical range of any member of the Carnivore family. It is distributed
+							across the entire northern hemisphere from the Arctic Circle to North Africa, Central America, and
+							the Asiatic steppes. The Red Fox is found throughout most of the US including Alaska and
+							throughout Canada. It is not found in the southwestern parts of the States or Mexico.
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Food Preferences:</b></p>
+						<br /><center><img src="animals/fox_red/rabbit.jpg" height="180" width="230"></center><br />
+						<p style="text-align:justify">
+							Red Foxes are considered omnivorous, but prefer rabbits, mice, rats, birds, poultry and small
+							livestock as well as insects.  The fox sneaks along until it hears a rustle of a mouse in the grass.
+							Then it turns its head from side to side, using its wonderful ears to find the exact location of its prey.
+							The fox will stalk its prey and then pounce on it much like a cat.  They may kill more than they eat and
+							caches excess for later consumption.  Foxes also like eggs, nuts, berries, grapes and other plants.
+						</p>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="w3-container w3-white">
+						<p><b>Enemies:</b></p>
+						<br /><center><img src="animals/fox_red/dog.jpeg" height="175" width="230"></center><br />
+						<p style="text-align:justify">
+							Humans, automobiles, dogs, mites, ticks, fleas, parasitic worms, distemper and rabies.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<a href="http://www.facebook.com/WildlifeRehabilitationClinic"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href="https://www.instagram.com/wildliferehabclinic/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href="http://www.youtube.com/user/WildlifeRehabStlMO"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+		<br />
+		<center>
+			<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+				1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+				<br />
+				The Wildlife Rehabilitation Clinic is an all volunteer,
+				non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+				Missouri Department of Conservation.
+			</span>
+		</center>
+
+	</footer>
+
+
+	<script>
+		// When the user scrolls down 500px from the top of the document, show the button
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+
+</body>
+</html>
