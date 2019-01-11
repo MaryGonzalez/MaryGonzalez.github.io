@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Wildlife Rehabilitation Clinic</title>
+	<link rel="stylesheet" href="StyleSheet1.css">
+	<script src="JavaScript.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+
+	<!-- Navbar -->
+	<div class="w3-top">
+		<div class="w3-bar w3-black w3-card">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+			<a href="help.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HELP</a>
+			<a href="edu.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+			<a href="shop.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SHOP</a>
+			<div class="w3-dropdown-hover w3-hide-small">
+				<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="about.html" class="w3-bar-item w3-button">ABOUT US</a>
+					<a href="handbook.html" class="w3-bar-item w3-button">HANDBOOK</a>
+				</div>
+			</div>
+
+			<div class="w3-container  w3-right w3-opacity w3-large" style="padding-top:10px;">				
+				<a href="http://www.facebook.com/WildlifeRehabilitationClinic" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+				<a href="https://www.instagram.com/wildliferehabclinic/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+				<a href="http://www.youtube.com/user/WildlifeRehabStlMO" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+	<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="help.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HELP</a>
+		<a href="edu.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+		<a href="shop.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SHOP</a>
+		<a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+		<a href="handbook.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HANDBOOK</a>
+	</div>
+
+
+
+	<!-- Page content -->
+	<div class="w3-content" style="max-width:1500px;margin-top:46px">
+
+		<div class="containerImage">
+			<img src="pictures/raccoon.jpg" alt="Raccoon" style="width:100%;">
+			<div class="content">
+				<center><div class="Image">Wildlife Rehabilitation Clinic</div></center>
+
+			</div>
+		</div>
+	</div>
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+	<!-- The Animals -->
+
+	<div class="w3-container w3-content w3-center w3-padding-32" style="max-width:600px" id="band">
+		<h2 class="w3-wide">THE ANIMALS</h2>
+		<p class="w3-opacity"><i>"Caring For Tomorrow's Wildlife"</i></p>
+		<br />
+		<p class="w3-justify">
+			Please do all you can to keep the babies with their mother. IF YOU FIND AN ANIMAL, BABY OR ADULT, INJURED
+			OR ORPHANED, <b>CALL US IMMEDIATELY @ 636-677-3670</b> If we do not answer the phone, please leave a message and we
+			will get back to you as soon as possible.
+		</p><br />
+
+		<p style="text-align:justify">
+			<span style="color: crimson"><b>PLEASE</b></span>
+			<b><u>DO NOT</u></b> FEED ANY BABY ANIMAL YOU FIND!
+			<br /><br />
+			<span style="color: crimson"><b>PLEASE</b></span>
+			<b><u>DO NOT</u></b> GIVE WATER, MILK, OR FORMULA TO ANY BABY ANIMAL YOU FIND!
+			<br /><br />
+			<span style="color: crimson"><b>PLEASE</b></span>
+			<b><u>KEEP</u></b> ANY BABY ANIMAL <b><u>WARM</u></b>!! IF POSSIBLE PLACE IN A SHOE BOX
+			WITH A CLOTH OR RAG!
+		</p>
+		<br /><br />
+
+		<span style="color: crimson; font-size:18px"><b>**Click on the photos below for information on <br />what to do if you find an animal.**</b></span>
+
+	</div>
+
+
+
+
+	<!--MODALS-->
+	<div class="w3-row w3-padding-32 w3-content w3-justify" style="max-width:750px">
+		<div class="flex-containerAnimals">
+
+			<div id="modals">
+				<div>
+					<!--Squirrel Modal-->
+					<div class="w3-third">
+						<p>
+							<button class="button" data-modal="modalOne">
+								Squirrel<br><br>
+								<img src="pictures/squirrel.jpg" class="w3-round w3-margin-bottom" alt="Squirrel" style="width:170px; height:200px">
+							</button>
+						</p>
+
+						<div id="modalOne" class="modal">
+							<div class="modal-content">
+								<a class="close">&times; &nbsp;</a>
+								<div class="contact-form">
+									<div class="modal-header1">
+									</div>
+									<div class="modal-body">
+										<center><h2>Squirrel</h2></center><br />
+
+										<center>
+										<table>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+											<tr>
+												<td>
+
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/squirrel.jpg" width="250" height="200"></span>
+
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>Baby squirrels (silky &amp; pinky)</p>
+																	</div>
+																</td>
+															</tr>
+
+
+
+
+														</tbody>
+													</table>
+												</td>
+												<td>
+													<table>
+														<tr>
+															<td style="text-align: center; background-color: none;">
+																<img src="pictures/babies/Squirrel-nest.jpg" width="250" height="200">
+
+															</td>
+														</tr>
+														<tr>
+															<td style="text-align: center; background-color: none;">
+																<div class="circle">
+																	<p>Squirrel nests</p>
+																</div>
+															</td>
+														</tr>
+
+
+													</table>
+												</td>
+											</tr>
+										</table>
+										</center>
+
+
+										<br />
+										<p>
+											<ul>
+												<li>
+													Mother squirrels are very dedicated and will try to retrieve their babies if separated from them.
+													If the baby is <i>not injured*</i> or extremely skinny and you know where the nest is (and the mom is ok) the best
+													thing for the baby is to try to reunite it with the mom.
+												</li>
+												<br />
+												<li>
+													Do not give it anything to eat or drink.  We want
+													the baby to cry so that the mom will hear it.  Put the baby in a plastic dish (like for butter or cool whip)
+													with a small piece of cloth (such as a piece of old t-shirt) under it and tack the dish to the tree where the
+													nest is.  Put it at least 6 feet up from the ground.
+												</li>
+												<br />
+												<ul>
+													<li>Do not do this after dark! She will not come out after dark.</li>
+													<li>Do not do this if the baby is injured.</li>
+													<li>Do not do this if a cat has had it in its mouth.**</li>
+												</ul>
+												<br />
+												<li>
+													Go inside &amp; watch for the mom.  If she does not come for the baby within a couple of hours, please call us <b>(636) 677-3670.</b>
+													If it is after dark, keep the baby warm overnight and put them out in the morning.  Place the container on a covered heating pad.
+													Keep the heating pad on LOW.  Keep away from pets.  Put the container back out on the tree at first light and give mom an hour
+													to come get it.
+												</li>
+												<br />
+												<li>
+													If, after an hour, the mom has not taken the babies back, please call our clinic.  The baby should be kept warm
+													to the touch until you can bring it to us.
+												</li>
+
+											</ul>
+											<br /><br />
+											*If it is injured, has maggots, looks very skinny &amp; boney, or if it was brought to you by a dog or cat, please call the wildlife
+											clinic.
+											<br /><br />
+											**If a cat got it, time is of the essence because the baby will need antibiotics.  Cat saliva is infectious and deadly.
+											Call us!
+											<br /><br />
+											Click on the link below for more information on how to safely remove a squirrel if you happen to find one or a family in your attic: <a href="http://www.squirrel-attic.com/">squirrel-attic.com</a>
+										</p><br />
+									</div>
+								</div>
+								<div class="modal-footer1"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div id="modals">
+				<div>
+					<!--Opossum Modal-->
+					<div class="w3-third">
+						<p>
+							<button class="button" data-modal="modalTwo">
+								Opossum<br><br>
+								<img src="pictures/opossum.jpg" class="w3-round w3-margin-bottom" alt="Opossum" style="width:150px; height:200px">
+							</button>
+						</p>
+
+						<div id="modalTwo" class="modal">
+							<div class="modal-content">
+								<a class="close">&times; &nbsp;</a>
+								<div class="contact-form">
+									<div class="modal-header2">
+
+									</div>
+									<div class="modal-body">
+										<center><h2>Opossum</h2></center><br />
+
+										<center>
+										<table>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+											<tr>
+												<td>
+
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/opossum1.jpg" width="250" height="200"></span>
+
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>Baby opossums (silky &amp; pinky)</p>
+																	</div>
+																</td>
+															</tr>
+
+
+
+
+														</tbody>
+													</table>
+												</td>
+												<td>
+													<table>
+														<tr>
+															<td style="text-align: center; background-color: none;">
+																<img src="pictures/babies/opossum2.jpg" width="300" height="200">
+
+															</td>
+														</tr>
+														<tr>
+															<td style="text-align: center; background-color: none;">
+																<div class="circle">
+																	<p>Opossum pouch with babies</p>
+																</div>
+															</td>
+														</tr>
+
+
+													</table>
+												</td>
+											</tr>
+										</table>
+										</center>
+
+
+
+
+										<br />
+										<ul>
+											<li>
+												Since opossums do not have nests or dens, the babies travel with the mom until they are able to live on their own.  If a single opossum
+												is found with no mother around it cannot be reunited.  Keep it warm and do not feed it anything and call the clinic ASAP
+											</li>
+											<br>
+											<li>If you find live baby opossums around a dead mother keep them warm, do not feed and call the WRC</li>
+											<br>
+											<li>
+												If you find a dead mother with a pouch full of babies, the dead mother and babies can be brought to us <b><u>immediately</u></b>
+												with the babies still in the pouch undisturbed.  Time is very important at this stage to avoid the babies from consuming spoiled milk.
+											</li>
+										</ul><br />
+									</div>
+								</div>
+								<div class="modal-footer2">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Raccoon Modal-->
+			<div id="modals">
+				<div class="w3-third">
+					<p>
+						<button class="button" data-modal="modalThree">
+							Raccoon<br><br>
+							<img src="pictures/raccoon2.jpg" class="w3-round w3-margin-bottom" alt="Raccoon" style="width:150px; height:200px">
+						</button>
+					</p>
+
+
+
+					<div id="modalThree" class="modal">
+						<div class="modal-content">
+							<a class="close">&times; &nbsp;</a>
+							<div class="contact-form">
+								<div class="modal-header3">
+
+								</div>
+								<div class="modal-body">
+									<center><h2>Raccoon</h2></center><br />
+									<center>
+										<img src="pictures/babies/raccoon2.jpg" width="250" height="200">&nbsp;&nbsp;&nbsp;&nbsp;
+										<img src="pictures/babies/raccoon1.jpg" width="300" height="200">
+									</center><br />
+
+									<center>
+										<h4>**DO NOT FEED, DO NOT LET CHILDREN OR ANIMALS TOUCH**</h4>
+										<h4>**DO KEEP WARM, DO CALL US (636) 677-3670**</h4>
+										<h5>*WE DO NOT ACCEPT ADULT RACCOONS*</h5><br />
+									</center>
+
+									<ol type="1">
+										<li>
+											Keep warm, use gloves to put in a box with soft material, no towels.  Take soda bottle and fill with very warm water
+											wrapped in a sock, taped to side of box.  Replace with very warm water as it cools, do not let get cold.  Keep box inside
+											until dusk.
+										</li>
+										<br>
+										<li>Do not let children or animals touch, keep in a quiet area.</li>
+										<br>
+										<li><b>DO NOT FEED.  DO NOT GIVE ANYTHING TO DRINK.</b></li>
+										<br />
+										<li>Call us to let us know what is happening.</li>
+										<br>
+										<li>The mother will not come back for them until after dark, sometimes as late as midnight.</li>
+										<br>
+										<li>
+											Make sure the box you have them in is tall enough they can not climb out.  Put box back out as it gets dark where
+											you found the baby.  Place a towel over the top of the box to keep out owls and night birds.
+										</li>
+										<br>
+										<li>
+											Stay away from the box as much as possible except to check every hour to see if the mother has come back for the babies.
+											If the towel has not been moved she has not come back.
+										</li>
+										<br>
+										<li>
+											If the mother's tree has been cut down, it could be as late as midnight before she has found a new home and will come
+											back for her babies. Check for any blood or injuries on the babies and call us immediately. It is possible she will not take
+											all babies.  Her new home may not be big enough for everyone.  If the mother does come back, she will move them as quickly
+											as possible.  If it has been more than an hour since she retrieved a baby, then she is probably done.
+										</li>
+										<br>
+										<li>
+											Take remaining baby(ies) inside and keep warm.  Call us.  It is important to be in contact with one of the raccoon
+											specialists throughout the process.
+										</li>
+										<br>
+										<li>
+											Click on the link for more information on how to safely remove a raccoon if you happen to find one or a
+											family in your attic: <a href="http://www.raccoonatticguide.com/">raccoonatticguide.com</a>
+										</li>
+
+
+
+									</ol>
+								</div>
+							</div>
+							<div class="modal-footer3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="modals">
+				<div>
+					<!--Bunny Modal-->
+					<div class="w3-third">
+						<p>
+							<button class="button" data-modal="modalFour">
+								<br />Bunny<br><br>
+								<img src="pictures/bunny2.jpg" class="w3-round w3-margin-bottom" alt="Bunny" style="width:180px; height:200px">
+							</button>
+						</p>
+
+						<div id="modalFour" class="modal">
+							<div class="modal-content">
+								<a class="close">&times; &nbsp;</a>
+								<div class="contact-form">
+									<div class="modal-header4">
+
+									</div>
+									<div class="modal-body">
+										<center><h2>Bunny</h2></center><br />
+
+
+										<center>
+										<table>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+
+											<tr>
+
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/baby-bunny.jpg" width="200" height="200"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>A baby bunny<br /><br /><br /><br /></p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/bunnyNest.jpg" width="250" height="200"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>New born bunnies in nest<br /><br /><br /><br /></p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/cottontail.jpg" width="200" height="200"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>Bunnies that can survive on<br /> their own (yes they look small,<br /> but fully able for surviving with <br />out intervention)</p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+
+
+											</tr>
+										</table>
+										</center>
+
+
+
+										<br />
+										<ul>
+											<li>
+												Bunnies are the babies most often unintentionally kidnapped by well-meaning people.  Rabbit nests are left unguarded most
+												of the time, with the mother on the nest only twice a day for feeding.  Both feedings are done at night, when her presence will
+												not attract predators.
+											</li>
+											<br>
+											<li>
+												Try to assess whether the babies seem warm, active, and have round tummies (bloated-looking) or if they are cold, thin,
+												and dehydrated.  On bunnies that don't have much fur yet, you can see a white milk line in their tummy if they've been fed.
+												If you think the nest is abandoned, place 4 pieces of string (dental floss works well) in an #(tic-tac-toe)-pattern across
+												the nest and leave it overnight.  If it is disturbed in the morning, the mother has returned and the nest should be left alone.
+												This method is only trustworthy if the babies eyes are not yet open.  If their eyes are open and they are getting bigger they
+												may be coming out of the nest during the day and returning at night.
+											</li>
+											<br>
+											<li>
+												If the nest has not been disturbed, check the babies to see if their bellies look full and round.  If not, keep them warm,
+												do not feed and call WRC
+											</li>
+											<br>
+											<li>
+												If the nest is poorly located, cut the grass around it or cover with something that will allow the mother to get to them,
+												but not predators (Put an upside-down wheelbarrow or a lawnmower over the nest.)  If it really bothers you not to mow there,
+												you could gently take them out mow over it and put them back in EXACTLY the same location, but make sure they still have their
+												fur and dried grasses to cover them.  Yes, mom will still accept her babies if they've been touched by humans, but don't handle
+												more than absolutely necessary!  The babies are fragile and easily stressed so don't let the whole family or neighborhood hold them.
+												They need peace and quiet.  It won't be inconvenient for long, the babies usually leave the nest at only 2-3 weeks of age.  Never try to move the nest!
+												Mom doesn't find them by smell, she knows where they are geographically and even a 2-foot difference can throw her off.
+											</li>
+											<br>
+											<li>
+												Whatever the situation, if you feel they are compromised, please give us a call and we can help you assess the situation.
+												However, please do all you can to keep the babies with their mother. Rabbit mothers are much better at raising them than humans are.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="modal-footer4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="modals">
+				<div>
+					<!--Skunk Modal-->
+					<div class="w3-third">
+						<p>
+							<button class="button" data-modal="modalFive">
+								<br /> Skunk<br><br>
+								<img src="pictures/skunk.jpg" class="w3-round w3-margin-bottom" alt="Skunk" style="width:170px; height:200px">
+								
+							</button>
+						</p>
+
+						<div id="modalFive" class="modal">
+							<div class="modal-content">
+								<a class="close">&times; &nbsp;</a>
+								<div class="contact-form">
+									<div class="modal-header5">
+
+									</div>
+									<div class="modal-body">
+										<center><h2>Skunk</h2></center><br />
+
+										<center>
+										<table>
+											<tr>
+												<td colspan="2"></td>
+											</tr>
+
+											<tr>
+
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/skunkDen.jpg" width="250" height="170"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>Adult skunk with her litter of <br />babies coming out of her den.	<br />Baby skunks are called kits.<br /><br /></p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/skunk.jpg" width="250" height="170"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>
+																			Baby skunk's eyes are not open <br />yet &amp; they do not have fur. But <br> notice their skin is black and white.
+																			<br /><br />
+																		</p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+												<td>
+													<table>
+														<tbody>
+
+															<tr>
+																<td style="text-align: center; background-color: none">
+																	&nbsp;<span><img src="pictures/babies/babySkunk.jpg" width="200" height="170"></span>
+
+																</td>
+															</tr>
+
+															<tr>
+																<td style="text-align: center; background-color: none;">
+																	<div class="circle">
+																		<p>
+																			Baby skunk with fur, approx 3-4 <br />weeks old. Its eyes are open,<br /> &amp; it CAN
+																			spray at this age,<br />although not as potent.
+																		</p>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+												</td>
+
+
+
+
+
+
+											</tr>
+										</table>
+										</center>
+
+										<br />
+
+										<ul>
+											<li>
+												Mother skunks usually create a den under a porch, driveway, deck, or underground. The mother will venture out each evening
+												to find food for herself, and return near dawn each morning. Skunks do not make noises of any sort to alert anyone if they are
+												injured or abandoned. If you find baby skunks outside of their den, or starting to come out during day time hours and you are
+												aware of a dead skunk nearby (via smell or sight) please call us. If we cannot be immediately reached, you can temporarily
+												house the babies until we return your call.
+											</li>
+											<br>
+											<li>
+												If baby skunks have their eyes open already, they <b>CAN</b> and <b>MAY</b> spray but only in tiny quantities that are not
+												usually bothersome. When picking up a baby skunk, try to keep the tail tucked under the body so they are less able to spray.
+												Place the babies in a shoebox or other cardboard box, on a towel or pillowcase and keep in a warm, dark, quiet area in your
+												home or garage until we return your call. You can make a homemade heat source using a sock and some rice if possible. Fill a
+												sock with rice, tie off the end, microwave for one minute and place in box. If babies are cold, they will cling to it, if babies
+												are not cold, they will ignore it. Do NOT place rice sock directly on babies.
+											</li>
+											<br>
+											<li>
+												If you are unaware of any dead skunks in your vicinity, the babies can be placed back outside near the den site in the box
+												provided. Place a towel or blanket over the box to keep predatory eyes off of them and await Momma Skunk's return. If the babies
+												have not been retrieved in a few hours, please bring them back in and call us.
+											</li>
+											<br>
+											<li>
+												*If babies have maggots, fly packets, is in *any* way visibly injured, dehydrated, bloated, or bleeding in any way, do not
+												attempt to reunite and call us immediately.
+											</li>
+											<br>
+											<li>*If babies have been handled by a cat or dog, please do not attempt to reunite and call us immediately.</li>
+											<br />
+											<li>
+												<b><u>*DO NOT FEED. DO NOT GIVE ANYTHING TO DRINK.</u></b> SKUNK FORMULAS ARE VERY SPECIFIC TO SKUNKS. THEY CANNOT DIGEST
+												GOAT OR COW'S MILK on a long term basis and SHOULD <b>NEVER</b> BE FED MEAT OR DOG OR CAT FOOD, EVEN CANNED. These foods seem
+												effective at first, but ultimately will kill these animals if not corrected quickly with the proper diet.
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="modal-footer5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+		
+			<div id="modals">
+				<div>
+					<!--Other Animals Modal-->
+					<div class="w3-third">
+						<p>
+							<button class="button" data-modal="modalSix">
+								Birds, Reptiles, <br />Stray Dogs or Cats<br><br>
+								<img src="pictures/hawk2.jpg" class="w3-round w3-margin-bottom" alt="Other animals" style="width:180px; height:200px">
+							</button>
+						</p>
+
+						<div id="modalSix" class="modal">
+							<div class="modal-content">
+								<a class="close">&times; &nbsp;</a>
+								<div class="contact-form">
+									<div class="modal-header6">
+
+									</div>
+									<div class="modal-body">
+										<center><h2> Birds, Reptiles, Stray Dogs or Cats</h2></center><br />
+										<center>
+											<img src="pictures/bird.jpg" width="180" height="275"> &nbsp;
+											<img src="pictures/turtle.jpg" width="200" height="275">
+										</center> <br />
+										<ul>
+											<li>If you find a bird, visit <a href="http://www.metroanimal.org/directory/other_animals_rescue.shtml" target="_blank">metroanimal.org</a></li>
+											<li>If you find a reptile, visit <a href="http://www.stlherpsociety.org/" target="_blank">stlherpsociety.org</a></li>
+											<li>If you find a stray dog or cat, visit <a href="https://apamo.org/" target="_blank">apamo.org</a></li>
+
+										</ul>
+										<br />
+									</div>
+								</div>
+								<div class="modal-footer6"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>		
+		</div>
+	</div>
+
+
+
+
+
+
+
+		<!-- Contact Us Section -->
+		<div class="w3-black" id="tour">
+			<div class="w3-container w3-content w3-padding-32" style="max-width:900px">
+				<br />
+				<h2 class="w3-wide w3-center">CONTACT US</h2>
+				<br />
+
+				<ul class="w3-ul w3-black w3-text-white w3-center">
+					<li class="w3-padding">1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com </li>
+				</ul>
+
+
+				<br /><br />
+
+			
+			</div>
+		</div>
+
+
+
+
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+
+
+			<a href="http://www.facebook.com/WildlifeRehabilitationClinic" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+			<a href="https://www.instagram.com/wildliferehabclinic/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+			<a href="http://www.youtube.com/user/WildlifeRehabStlMO" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+			<br />
+			<center>
+
+				<span style="font-size:9px;padding-left:20px;padding-bottom:30px">
+					1864 Little Brennan Road, High Ridge, MO 63049 &middot; (636) 677-3670 &middot; wildliferehabclinic@hotmail.com
+					<br />The Wildlife Rehabilitation Clinic is an all volunteer,
+					non-profit   501(c)3 organization which specializes in the rehabilitation of native Missouri mammals and is licensed by the
+					Missouri Department of Conservation.
+				</span>
+			</center>
+
+		</footer>
+
+		<script>
+			// Animal Information Modals
+
+			var modalBtns = [...document.querySelectorAll(".button")];
+			modalBtns.forEach(function (btn) {
+				btn.onclick = function () {
+					var modal = btn.getAttribute('data-modal');
+					document.getElementById(modal).style.display = "block";
+				}
+			});
+
+			var closeBtns = [...document.querySelectorAll(".close")];
+			closeBtns.forEach(function (btn) {
+				btn.onclick = function () {
+					var modal = btn.closest('.modal');
+					modal.style.display = "none";
+				}
+			});
+
+			window.onclick = function (event) {
+				if (event.target.className === "modal") {
+					event.target.style.display = "none";
+				}
+			}
+		</script>
+
+
+</body>
+</html>
